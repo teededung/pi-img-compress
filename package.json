@@ -1,0 +1,47 @@
+{
+  "name": "pi-image-compress",
+  "version": "0.1.0",
+  "description": "Auto-compress pasted and referenced local images into Pi ImageContent attachments with atomic clickable [imageN] editor placeholders.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "keywords": [
+    "pi",
+    "pi-package",
+    "pi-extension",
+    "pi-coding-agent",
+    "image",
+    "compress",
+    "resize",
+    "clipboard"
+  ],
+  "author": "teededung",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teededung/pi-image-compress.git"
+  },
+  "homepage": "https://github.com/teededung/pi-image-compress#readme",
+  "bugs": {
+    "url": "https://github.com/teededung/pi-image-compress/issues"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "scripts": {
+    "test": "node --test --experimental-strip-types test/*.test.ts"
+  }
+}
