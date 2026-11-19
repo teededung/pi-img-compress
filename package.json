@@ -1,6 +1,6 @@
 {
   "name": "pi-img-compress",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Auto-compress pasted and referenced local images into Pi ImageContent attachments with atomic clickable [imageN] editor placeholders.",
   "type": "module",
   "main": "./src/index.ts",
