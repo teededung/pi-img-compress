@@ -1,4 +1,4 @@
-# pi-image-compress
+# pi-img-compress
 
 Auto-compress pasted and referenced local images into Pi `ImageContent` attachments using Pi's built-in `resizeImage`, with atomic clickable `[imageN]` placeholders in the Pi TUI editor.
 
@@ -13,9 +13,9 @@ Auto-compress pasted and referenced local images into Pi `ImageContent` attachme
 ## Installation
 
 ```bash
-pi install npm:pi-image-compress
+pi install npm:pi-img-compress
 # or from GitHub
-pi install git:github.com/teededung/pi-image-compress
+pi install git:github.com/teededung/pi-img-compress
 ```
 
 Or add to `~/.pi/agent/settings.json`:
@@ -23,7 +23,7 @@ Or add to `~/.pi/agent/settings.json`:
 ```json
 {
   "packages": [
-    "npm:pi-image-compress"
+    "npm:pi-img-compress"
   ]
 }
 ```
@@ -45,7 +45,7 @@ Or add to `~/.pi/agent/settings.json`:
 | [pi-agy-provider](https://github.com/teededung/pi-agy-provider) | Antigravity (`agy`) provider & multi-agent orchestrator (`/swarm`, `/boost`, `/teamwork`, `/btw`) | `pi install npm:pi-agy-provider` |
 | [pi-md-render](https://github.com/teededung/pi-md-render) | Streaming-first rich Markdown, code, Mermaid & LaTeX rendering for the Pi TUI | `pi install npm:pi-md-render` |
 | [pi-session-sweep](https://github.com/teededung/pi-session-sweep) | Session management & cleanup with native `agy` conversation cleanup | `pi install npm:pi-session-sweep` |
-| [pi-image-compress](https://github.com/teededung/pi-image-compress) | Auto-compress pasted & referenced local images with atomic `[imageN]` editor links | `pi install npm:pi-image-compress` |
+| [pi-img-compress](https://github.com/teededung/pi-img-compress) | Auto-compress pasted & referenced local images with atomic `[imageN]` editor links | `pi install npm:pi-img-compress` |
 
 ## License
 

@@ -1,5 +1,5 @@
 {
-  "name": "pi-image-compress",
+  "name": "pi-img-compress",
   "version": "0.1.0",
   "description": "Auto-compress pasted and referenced local images into Pi ImageContent attachments with atomic clickable [imageN] editor placeholders.",
   "type": "module",
@@ -18,11 +18,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/teededung/pi-image-compress.git"
+    "url": "git+https://github.com/teededung/pi-img-compress.git"
   },
-  "homepage": "https://github.com/teededung/pi-image-compress#readme",
+  "homepage": "https://github.com/teededung/pi-img-compress#readme",
   "bugs": {
-    "url": "https://github.com/teededung/pi-image-compress/issues"
+    "url": "https://github.com/teededung/pi-img-compress/issues"
   },
   "files": [
     "src",

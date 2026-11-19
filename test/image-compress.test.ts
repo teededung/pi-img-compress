@@ -22,9 +22,9 @@ const TINY_PNG = Buffer.from(
 );
 const FAKE_JPEG = Buffer.from([0xff, 0xd8, 0xff, 0xe0, 0x00, 0x10, 0x4a, 0x46, 0x49, 0x46]);
 
-describe("pi-image-compress", () => {
+describe("pi-img-compress", () => {
 	test("compresses temp paste and referenced image paths, attaches ImageContent, and rewrites links", async () => {
-		const dir = mkdtempSync(path.join(tmpdir(), "pi-image-compress-"));
+		const dir = mkdtempSync(path.join(tmpdir(), "pi-img-compress-"));
 		const orcaPath = path.join(dir, "orca-paste-1794716077100.png");
 		const projectShot = path.join(dir, "shot.png");
 		const fakeTxtPng = path.join(dir, "fake.png");
@@ -120,7 +120,7 @@ describe("pi-image-compress", () => {
 	});
 
 	test("falls back to original bytes when resizer returns null", async () => {
-		const dir = mkdtempSync(path.join(tmpdir(), "pi-image-compress-fallback-"));
+		const dir = mkdtempSync(path.join(tmpdir(), "pi-img-compress-fallback-"));
 		const orcaPath = path.join(dir, "orca-paste-only.png");
 		writeFileSync(orcaPath, TINY_PNG);
 
@@ -140,7 +140,7 @@ describe("pi-image-compress", () => {
 	});
 
 	test("extension intercepts pasted/dragged images in terminal input, renders [image1] links, and resolves on submit", async () => {
-		const dir = mkdtempSync(path.join(tmpdir(), "pi-image-compress-tui-"));
+		const dir = mkdtempSync(path.join(tmpdir(), "pi-img-compress-tui-"));
 		const orcaPath = path.join(dir, "orca-paste-live.png");
 		writeFileSync(orcaPath, TINY_PNG);
 
